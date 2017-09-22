@@ -1,0 +1,432 @@
+
+@font-face {
+    font-family: 'iconfont';  /* project id 363538 */
+    src: url('http://at.alicdn.com/t/font_qesaa6bso6crf6r.eot');
+    src: url('http://at.alicdn.com/t/font_qesaa6bso6crf6r.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_qesaa6bso6crf6r.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_qesaa6bso6crf6r.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_qesaa6bso6crf6r.svg#iconfont') format('svg');
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.big{
+    width: 100%;
+    height: auto;
+    background: #000;
+}
+.big-nav{
+    max-width:1071px;
+    height: 40px;
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.big-nav li{
+     width: 100%;
+     height: 100%;
+     font-family: "iconfont";
+     font-size: 14px;
+     line-height: 40px;
+     text-align: center;
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+ }
+.big-nav li:first-child{
+    font-size: 18px;
+}
+.big-nav li:nth-child(8){
+    font-size: 18px;
+}
+.big-nav li:last-child{
+    font-size: 20px;
+}
+.big-nav li a{
+    display: block;
+    color: #fff;
+}
+.big-nav li a:hover{
+    color: #A8A8AA;
+}
+.small{
+    width: 100%;
+    height: 40px;
+    background: #000;
+}
+.sma{
+    max-width: 766px;
+    height: 100%;
+    margin:0 auto;
+}
+.sma-nav{
+    max-width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+}
+.sma-nav li{
+    width: 40px;
+    height: 40px;
+    font-family: "iconfont";
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+}
+.sma-nav li:last-child{
+    font-size: 20px;
+}
+.sma-nav li a{
+    display: block;
+    color: #fff;
+}
+.big{
+    display: block;
+}
+.small{
+    display: none;
+}
+@media screen and (max-width: 767px){
+    .small{
+    display: block;
+}
+    .big{
+    display: none;
+    }
+    .sma-nav li a:hover{
+    color: #A8A8AA;
+    }
+}
+.banner{
+    width: 100%;
+    height:540px;
+    position: relative;
+}
+.banner>div>img{
+    width: 100%;
+    height:540px;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+}
+.tiao{
+    width: 190px;
+    height: 5px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.tiao li{
+    width: 50px;
+    height: 2px;
+    background: #3e3a39;
+}
+.lun .icon-xiaoyuhao{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #eeefff;
+    text-align: center;
+    line-height: 50px;
+    font-family: iconfont;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.lun .icon-dayuhao{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #eeefff;
+    text-align: center;
+    line-height: 50px;
+    font-family: iconfont;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+@media screen and (max-width: 1050px) {
+    .banner{
+    height:500px;}
+}
+@media screen and (max-width:750px){
+    .banner{
+        height:420px;}
+}
+.list{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.list li{
+    float: left;
+    width: 25%;
+    height: 270px;
+    box-sizing: border-box;
+    background: #eeeeee;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    font-family: iconfont;
+    font-size: 18px;
+}
+.list li p{
+    margin-top: 40px;
+}
+.list li:first-child{
+     background-image: url("../img/apple_pay_large_2x.jpg");
+     background-position: center;
+     background-size: cover;
+ }
+.list li:nth-child(2){
+     background-image: url("../img/imac_large_2x.jpg");
+     background-position: center;
+     background-size: cover;
+ }
+.list li:nth-child(3){
+    background-image: url("../img/iphone_upgrade_large_2x.png");
+    background-position: center;
+    background-size: cover;
+}
+.list li:last-child{
+    background-image: url("../img/summer_formal_large_2x.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.list li:last-child{
+    border-right: none;
+}
+@media screen and (max-width: 1096px){
+    .list li{
+        width: 50%;
+    }
+    .list li:nth-child(2n){
+        border-right: none;
+    }
+}
+@media screen and (max-width: 750px){
+    .list li{
+        width: 100%;
+    }
+    .list li{
+        border-right: none;
+    }
+}
+.f-t{
+    max-width:1070px;
+    height: auto;
+    font-size: 10px;
+    color: #959595;
+    margin: 10px auto;
+    /*padding: 10px auto;*/
+}
+hr{
+    max-width:1070px;
+    margin: 0 auto;
+}
+.f-b{
+    display: block;
+}
+.f-b2{
+    display: none;
+}
+.zhongguo1{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .f-t{
+        padding-left: 10px;
+    }
+    .xuangou{
+        padding-left: 10px;
+    }
+    .foot .foot1{
+        margin-left: 10px;
+    }
+    .last{
+        padding-left: 10px;
+    }
+    .f-b{
+        display: none;
+    }
+    .f-b2{
+        display: block;
+    }
+    .zhongguo{
+        display: none;
+    }
+    .hr2{
+        display: none;
+    }
+    .zhongguo1{
+        width: 1070px;
+        height: auto;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .zhongg1{
+        float: left;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("../img/32.png") no-repeat left center;
+        background-size: 20px 20px;
+    }
+    .zhongguo1 span{
+        width: 90%;
+        height: auto;
+        float: left;
+        line-height: 20px;
+    }
+    .zhongguo1 span a{
+        color: #333333;
+    }
+    .zhongguo1{
+        display: block;
+    }
+}
+
+.f-b{
+    width: 1071px;
+    height: auto;
+    margin: 20px auto;
+}
+.f-b>li{
+    width: 20%;
+    height: auto;
+    float: left;
+    font-size: 12px;
+    color: #333333;
+}
+.f-b>li a{
+    color: #555555;
+}
+.f-b2{
+    margin: 20px auto;
+    max-width: 768px;
+    height: auto;
+    font-size: 12px;
+    color: #333333;
+
+}
+.f-b2 li{
+    line-height: 20px;
+    height: 20px;
+    border-bottom: 1px solid #333333;
+    padding: 10px 10px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.bt{
+    font-weight: bold;
+}
+.bt1{
+    margin-top: 20px;
+}
+.xuangou{
+    max-width: 1070px;
+    height: auto;
+    margin: 50px auto 10px;
+    font-size: 10px;
+    color:#555555;
+}
+.xuangou span a{
+    color: #0170C9;
+}
+.xuangou span a:hover{
+    border-bottom: 1px solid #0170C9;
+}
+.clear{
+    clear: both;
+}
+.foot{
+    max-width: 1070px;
+    height: auto;
+    font-size: 10px;
+    color: #333333;
+    margin: 10px auto;
+    position:relative;
+}
+.foot li{
+    float: left;
+    border-right: 1px solid #333333;
+    padding: 0 10px;
+}
+.foot li a{
+    color: #555555;
+}
+.foot li:first-child{
+    margin-right: 20px;
+    border-right: none;
+    padding-left: 0;
+}
+.foot li:last-child{
+    border-right: none;
+}
+.foot li:nth-child(2):hover{
+      border-bottom: 1px solid #333333;
+  }
+.foot li:nth-child(3):hover{
+    border-bottom: 1px solid #333333;
+}
+.foot li:nth-child(4):hover{
+    border-bottom: 1px solid #333333;
+}
+.foot li:nth-child(5):hover{
+    border-bottom: 1px solid #333333;
+}
+.foot li:last-child:hover{
+    border-bottom: 1px solid #333333;
+}
+.zhongguo{
+    width: 60px;
+    height: auto;
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+.zhongg{
+    float: left;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/32.png") no-repeat left center;
+    background-size: 20px 20px;
+}
+.zhongguo span{
+    float: left;
+    line-height: 20px;
+}
+.zhongguo span a{
+    color: #333333;
+}
+.last{
+    max-width: 1070px;
+    height: 50px;
+    font-size: 10px;
+    color: #333333;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
